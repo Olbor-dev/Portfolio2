@@ -1,11 +1,22 @@
-import './assets/main.css'
+// Supports weights 400-700
+import '@fontsource-variable/caveat';
+// Supports weights 100-900
+import '@fontsource-variable/chivo';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import './assets/main.css';
 
-const app = createApp(App)
+import { createApp } from 'vue';
+import App from './App.vue';
+import { routes } from './router/index.js';
+import {createRouter, createWebHistory } from 'vue-router';
+/*import router from './router'*/
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+});
 
-app.use(router)
+const app = createApp(App);
 
-app.mount('#app')
+app.use(router);
+
+app.mount('#app');
