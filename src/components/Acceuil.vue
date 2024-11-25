@@ -1,5 +1,6 @@
 <script setup>
 import Formulaire from './Formulaire.vue';
+import Projets from './Projets.vue';
 
 </script>
 
@@ -13,23 +14,9 @@ import Formulaire from './Formulaire.vue';
             </p>
             <span>Olivier Bordage</span>
         </section>
-        <section>
+        <section class="section__projets">
             <hr>
-            <h2>Mes créations</h2>
-            <ul class="img__bordure__polaroid">
-                <li>
-                    <h3>Mon CV en HTML et CSS</h3>
-                    <img class="img__mini__creation" src="@/assets/img/CV-Olivier-Bordage.png" alt="Projet CV Olivier Bordage">
-                </li>
-                <li>
-                    <h3>Création d'un cahier des charges pour un site de e-commerce</h3>
-                    <img class="img__mini__creation" src="@/assets/img/Cahier-Charges-LaSocketterie.png" alt="Cahier des charges la Socketterie">
-                </li>
-                <li>
-                    <h3>Ajout d'un espace commmentaire dynamique</h3>
-                    <img class="img__mini__creation" src="@/assets/img/Espace-Commentaire.png" alt="Projet ajout d'un espace commentaire">
-                </li>
-            </ul>
+            <Projets></Projets>
         </section>
         <section>
             <hr>
@@ -74,10 +61,6 @@ import Formulaire from './Formulaire.vue';
         font-style: italic;
     }
 
-    h2 {
-        margin-left: 2%;
-    }
-
     hr {
         width: 40%;
         border-width: 5px;
@@ -85,32 +68,10 @@ import Formulaire from './Formulaire.vue';
         
     }
 
-    .img__mini__creation {
-        height: 120px;
-        width: 100px;
-        border: solid blue;
-    }
+    /*.section__projets :deep(h2) {
+        margin-left: 10%;
+    }*/
 
-    .img__bordure__polaroid img {
-        display: inline-block;
-        background: white;
-        padding: 10px;
-        padding-bottom: 30px; /* Simule l'espace large en bas */
-        border: 1px solid #ddd;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        max-width: 300px; /* Ajustez selon vos besoins */
-    }
+    
 
-    li {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-end;
-        margin: 1em;
-    }
-
-    h3 {
-        margin: 1em;
-    }
 </style>

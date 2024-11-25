@@ -5,6 +5,8 @@ import '@fontsource-variable/chivo';
 
 import './assets/main.css';
 
+import { ref } from 'vue';
+
 import { createApp } from 'vue';
 import App from './App.vue';
 import { routes } from './router/index.js';

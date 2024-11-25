@@ -11,8 +11,8 @@ import { ref } from 'vue'
         <nav>
             <ul>
                 <RouterLink to="/">A propos</RouterLink>
-                <RouterLink to="/">Projets</RouterLink>
-                <RouterLink to="/contact">Me contacter</RouterLink>
+                <RouterLink :to="{name: 'projets'}">Projets</RouterLink>
+                <RouterLink :to="{name: 'contact'}">Me contacter</RouterLink>
             </ul>
         </nav>
     </header>
@@ -49,5 +49,9 @@ import { ref } from 'vue'
 
     a:hover {
         text-decoration: underline;
+    }
+
+    a:active {
+        color:yellow;
     }
 </style>

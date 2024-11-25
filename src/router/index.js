@@ -23,9 +23,13 @@ const router = createRouter({
 export default router*/
 import HomeView from "@/views/HomeView.vue";
 import Formulaire from "@/components/Formulaire.vue";
+import NotFound from "@/components/NotFound.vue";
+import Projets from "@/components/Projets.vue";
 
 export const routes = [
   {path: '/', component: HomeView},
-  {path: '/contact', component: Formulaire},
+  {path: '/projets', component: Projets, name: 'projets'},
+  {path: '/contact', component: Formulaire, name: 'contact'},
+  {path: '/:pathMatch(.*)*', component: NotFound}
   /*{path: '/contact/:id', component: Formulaire, props: true},*/
 ]
