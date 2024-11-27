@@ -5,20 +5,12 @@ import '@fontsource-variable/chivo';
 
 import './assets/main.css';
 
-import { ref } from 'vue';
-
 import { createApp } from 'vue';
+
 import App from './App.vue';
-import { routes } from './router/index.js';
-import {createRouter, createWebHistory } from 'vue-router';
-/*import router from './router'*/
-const router = createRouter({
-    history: createWebHistory(),
-    routes
-});
+import router from './router';
 
 const app = createApp(App);
 
 app.use(router);
-
 app.mount('#app');

@@ -2,31 +2,32 @@
 import { ref } from 'vue'
 import Modale from './Modale.vue'
 
-let modal = ref(false)
-let projet = ref(0)
 
-console.log(projet.value)
+let modal = ref(false)
+let projets = ref(0)
+
+console.log('Projet modal: ' + modal.value)
 </script>
 
 <template>
     <h2>Mes créations</h2>
     <ul class="img__bordure__polaroid">
-        <li @click="modal=true, projet=1" >
-            <h3>Mon CV en HTML et CSS {{ projet }}</h3>
+        <li 
+            @click="modal=true, projets=1">
+            <h3>Mon CV en HTML et CSS {{ projets }}</h3>
             <img class="img__mini__creation" src="@/assets/img/CV-Olivier-Bordage.png" alt="Projet CV Olivier Bordage">
-            
         </li>
-        <li @click="modal=true, projet=2">
-            <h3>Création d'un cahier des charges pour un site de e-commerce {{ projet }}</h3>
+        <li @click="modal=true, projets=2">
+            <h3>Création d'un cahier des charges pour un site de e-commerce {{ projets }}</h3>
             <img class="img__mini__creation" src="@/assets/img/Cahier-Charges-LaSocketterie.png" alt="Cahier des charges la Socketterie">
         </li>
-        <li>
-            <h3>Ajout d'un espace commmentaire dynamique</h3>
+        <li @click="modal=true, projets=3">
+            <h3>Ajout d'un espace commmentaire dynamique {{ projets }}</h3>
             <img class="img__mini__creation" src="@/assets/img/Espace-Commentaire.png" alt="Projet ajout d'un espace commentaire">
         </li>
     </ul>
     <button @click="modal=true">Modal On</button>
-    <modale v-if="modal"></modale>
+    <modale v-if="modal" @close="modal = false" :projet="projets"></modale>
     <button @click="modal=false">Modal Off</button>
         
 </template>
