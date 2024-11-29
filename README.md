@@ -1,29 +1,38 @@
-# Portfolio
+# Devoir CEF  - Portfolio Olivier Bordage 
 
-This template should help get you started developing with Vue 3 in Vite.
+Bienvenue sur mon portfolio.
+Dans ce Readme vous trouverez la methode pour installer et ouvrir ce projet.
 
-## Recommended IDE Setup
+## IDE utilisés pour ce projet
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur). + [Node.js](https://nodejs.org/)
 
-## Customize configuration
+## Etape 1 - Cloner le portfolio sur votre machine
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1- Ovrez votre terminal dans un nouveau dossier où vous voulez cloner le projet.
 
-## Project Setup
+2- Exécutez la commande suivante.
 
 ```sh
-npm install
+git clone https://github.com/Olbor-dev/Portfolio2.git
 ```
 
-### Compile and Hot-Reload for Development
+### Etape 2 - Installez NPM
+
+1- Entrez dans le dossier "cloné" (cd Portfolio).
+
+Exécutez la commande suivante.
+
+```sh
+npm innstall
+```
+
+### Etape 3 - Lancez le projet
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### NB - Infos
 
-```sh
-npm run build
-```
+N'oubliez pas que c'est le projet d'un débutant, soyez indulgent...

@@ -6,9 +6,11 @@
 </template>
 
 <style scoped>
-    img {
-        display: block;
-        margin: auto;
-        width: 90%;
-    }
+
+img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
 </style>

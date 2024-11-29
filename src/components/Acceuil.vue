@@ -1,4 +1,5 @@
 <script setup>
+
 import Formulaire from './Formulaire.vue';
 import Projets from './Projets.vue';
 
@@ -27,42 +28,40 @@ import Projets from './Projets.vue';
 </template>
 
 <style scoped>
-    div {
-        font-family: 'Chivo Variable', sans-serif;
-    }
 
-    h1 {
-        margin: 2%;
-        font-size: 1.6em;
-        text-shadow: 1px 1px 2px gray;
-    }
+div {
+    font-family: 'Chivo Variable', sans-serif;
+}
 
-    span {
-        color: blue;
-        display: block;
-        text-align: right;
-        margin: 1% 4% 0% 0%;
-        font-family: 'Caveat Variable', cursive;
-        font-size: 2em;
-        rotate: -4deg;
-        text-shadow: 1px 1px 2px black;
-        
-    }
+h1 {
+    margin: 2%;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px gray;
+}
 
-    p {
-        margin-left: 10%;
-        margin-right: 5%;
-        text-align: justify;
-        text-indent: 20px;
-        font-style: italic;
-    }
+span {
+    color: blue;
+    display: block;
+    text-align: right;
+    margin: 1% 4% 0% 0%;
+    font-family: 'Caveat Variable', cursive;
+    font-size: 2em;
+    rotate: -4deg;/* non validé W3C */
+    text-shadow: 1px 1px 2px black;
+}
 
-    hr {
-        width: 40%;
-        border-width: 5px;
-        border-style: outset;
-        
-    }
-   
+p {
+    margin-left: 10%;
+    margin-right: 5%;
+    text-align: justify;
+    text-indent: 20px;
+    font-style: italic;
+}
+
+hr {
+    width: 40%;
+    border-width: 5px;
+    border-style: outset;
+}
 
 </style>

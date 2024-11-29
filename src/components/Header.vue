@@ -1,4 +1,5 @@
 <script setup>
+
 import { ref } from 'vue'
 
 </script>
@@ -6,7 +7,7 @@ import { ref } from 'vue'
 <template>
     <header>
         <RouterLink to="/">
-        <img src="@/assets/img/Portrait-Olbor-dev.jpg" alt="Olbordev logo">
+            <img src="@/assets/img/Portrait-Olbor-dev.jpg" alt="Olbordev logo">
         </RouterLink>
         <nav>
             <ul>
@@ -19,39 +20,38 @@ import { ref } from 'vue'
 </template>
 
 <style scoped>
-    header {
-        /*display: flex;
-        flex-direction: column;*/
-        font-family: 'Caveat Variable', cursive;
-        width: 100%;
-        background-image: url("../assets/img/HeaderFond.jpg");
-        background-origin: border-box;
-        background-size: 100% 198%;
-        
-    }
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.5em;
-        margin: auto;
-        padding-left: 0em;
-        padding-right: 0em;
-        padding-bottom: 0.2em;
-        background-color: black;
-    }
+header {
+    font-family: 'Caveat Variable', cursive;
+    width: 100%;
+    background-image: url("../assets/img/HeaderFond.jpg");
+    background-origin: border-box;
+    background-size: 100% 198%;
+}
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+    margin: auto;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: 0.2em;
+    background-color: black;
+}
 
-    a:hover {
-        text-decoration: underline;
-    }
+a {
+    text-decoration: none;
+    color: white;
+}
 
-    a:active {
-        color:yellow;
-    }
+a:hover {
+    text-decoration: underline;
+}
+
+a:active, a:focus{
+     color:yellow;
+}
+
 </style>

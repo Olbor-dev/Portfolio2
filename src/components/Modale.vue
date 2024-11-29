@@ -32,7 +32,6 @@ const creations = [
 </script>
 
 <template>
-
     <div class="modal__background" @click="$emit('close')"></div>
     <div class="bloc__modale">
         <div>
@@ -62,54 +61,53 @@ const creations = [
             </div>
         </div>
     </div>
-    
 </template>
 
 <style scoped>
 
-    .modal__background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.5);
-    }
+.modal__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
 
-    .bloc__modale {
-        position: fixed;
-        top: 5%;
-        left: 10%;
-        background-color: white;
-        border: 1px solid #060640;
-        border-radius: 25px;
-        box-sizing: border-box;
-        height: 90%;
-        width: 80%;
-        padding: 2em;
-        overflow: auto;
-    }
+.bloc__modale {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    background-color: white;
+    border: 1px solid #060640;
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 90%;
+    width: 80%;
+    padding: 2em;
+    overflow: auto;
+}
 
-    button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        border-radius: 10px;
-        background-color: rgb(239, 102, 102);
-    }
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    background-color: rgb(239, 102, 102);
+}
 
-    button:hover {
-        zoom: 105%;
-    }
+button:hover {
+    zoom: 105%;
+}
 
-    .modal__background:hover {
-        background-color: rgba(0,0,0,0.6); 
-    }
+.modal__background:hover {
+    background-color: rgba(0,0,0,0.6); 
+}
 
-    a {
-        text-decoration: none;
-        color: blue;
-    }
+a {
+    text-decoration: none;
+    color: blue;
+}
 
 </style>
