@@ -15,7 +15,7 @@ import Footer from './components/Footer.vue';
 </template>
 
 <style scoped>
-    main {
+  /*main {
     margin: auto;
-  }
+  }*/
 </style>

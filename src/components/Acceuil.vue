@@ -8,8 +8,9 @@ import Projets from './Projets.vue';
     <div>
         <h1>Bienvenue chez Olbor-dev</h1>
         <section>
-            <p>Jeune développeur de site Web encore en formation, je vous présente mon portfolio actuel ainsi que mon désir de poursuivre dans cette voie du développement.
-                J'ai 56 ans, et je suis prêt à mettre, mes expériences, mon énergie et ma passion au service de vous mes futures clients. N'hésitez pas à me contacter à l'aide du formulaire (un des exercices du jour),
+            <p>Jeune développeur de site Web encore en formation, je vous présente mon portfolio actuel.
+                J'ai 56 ans, et je suis prêt à mettre, mes expériences, mon énergie et ma passion au service de mes futures clients.
+                N'hésitez pas à me contacter à l'aide du formulaire (un des exercices du jour),
                 ou plus directement (voir mes coordonnées).
             </p>
             <span>Olivier Bordage</span>
@@ -28,14 +29,9 @@ import Projets from './Projets.vue';
 <style scoped>
     div {
         font-family: 'Chivo Variable', sans-serif;
-        /*display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;*/
     }
 
     h1 {
-        /*display: block;*/
         margin: 2%;
         font-size: 1.6em;
         text-shadow: 1px 1px 2px gray;
@@ -67,11 +63,6 @@ import Projets from './Projets.vue';
         border-style: outset;
         
     }
-
-    /*.section__projets :deep(h2) {
-        margin-left: 10%;
-    }*/
-
-    
+   
 
 </style>
